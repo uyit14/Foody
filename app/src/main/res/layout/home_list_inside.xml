@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvIDCTDanhMuc_inside"
+        android:layout_marginBottom="25px"
+        android:layout_marginTop="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:text="Mới nhất"
+        />
+
+    <LinearLayout
+        android:layout_marginLeft="15px"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="160px">
+        <TextView
+            android:id="@+id/tvdiem"
+            android:layout_marginTop="15px"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="7.5"
+            android:background="@drawable/custom_img"
+            android:layout_width="110px"
+            android:layout_height="110px" />
+        <LinearLayout
+            android:layout_weight="8"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="150px">
+    <TextView
+        android:layout_marginLeft="10px"
+        android:id="@+id/tvTenCTDanhMuc_inside"
+        android:layout_marginTop="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Mới nhất"
+        />
+    <TextView
+        android:layout_marginLeft="10px"
+        android:id="@+id/tvAddress_inside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="13sp"
+        android:text="Mới nhất"
+        />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_marginRight="20px"
+        android:layout_marginLeft="20px"
+        android:id="@+id/Img_anh_inside"
+        android:layout_gravity="center"
+        android:layout_marginBottom="25px"
+        android:layout_width="match_parent"
+        android:layout_height="500px" />
+    <LinearLayout
+        android:layout_margin="15px"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#cf0303"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="135px">
+        <ImageView
+            android:layout_weight="1"
+            android:background="@drawable/dgh"
+            android:layout_width="40dp"
+            android:layout_height="0px" />
+        <TextView
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:text="Đặt giao hàng"
+            android:layout_weight="1"
+            android:layout_width="130dp"
+            android:layout_height="0px" />
+    </LinearLayout>
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvIDDM"
+        android:layout_marginBottom="25px"
+        android:layout_marginTop="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:text="Mới nhất"
+        />
+
+</LinearLayout>

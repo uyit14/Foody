@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/cb_tinhthanh"
+                android:visibility="invisible"
+                android:checked="true"
+                android:layout_weight="0.3"
+                android:paddingTop="20px"
+                android:paddingBottom="30px"
+                android:layout_width="0px"
+                android:layout_height="match_parent" />
+
+    <TextView
+        android:layout_weight="2.7"
+        android:text="123"
+        android:id="@+id/tvtentinhthanh"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:paddingTop="20px"
+        android:paddingBottom="30px"
+        android:layout_width="0px"
+        android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btn_tinhthanh_macdinh"
+                android:visibility="invisible"
+                android:text="Mặc định"
+                android:layout_weight="1"
+                android:layout_width="0px"
+                android:paddingTop="20px"
+                android:paddingBottom="30px"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvid"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

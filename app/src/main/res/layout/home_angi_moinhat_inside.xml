@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:id="@+id/imgAnGiMoiNhat"
+        android:src="@drawable/ic_tab2"
+        android:layout_marginBottom="25px"
+        android:layout_marginTop="25px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="25px"
+        android:layout_gravity="center"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+
+    <TextView
+        android:id="@+id/tvAnGiMoiNhat"
+        android:layout_marginBottom="25px"
+        android:layout_marginTop="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:text="Mới nhất"
+        />
+
+</LinearLayout>

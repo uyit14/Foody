@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.uy.foodyver1.View.Search"
+    >
+
+    <LinearLayout
+        android:background="#cc1c02"
+        android:layout_width="match_parent"
+        android:layout_height="125px">
+
+        <LinearLayout
+            android:weightSum="10"
+            android:layout_marginBottom="15px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="15px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/searchview"
+            android:layout_weight="5"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:hint="Tìm địa điểm, dịch vụ"
+            android:iconifiedByDefault="false"
+            android:inputType="text">
+        </EditText>
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="#ffffff"
+                android:gravity="right|center_vertical"
+                android:text="Địa điểm"
+                android:textStyle="bold" />
+            <TextView
+                android:gravity="center"
+                android:text="Tại"
+                android:background="#ffffff"
+                android:layout_weight="1"
+                android:layout_width="0px"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:text="Đà Nẵng"
+                android:background="#ffffff"
+                android:layout_weight="2"
+                android:layout_width="0px"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+            </TabWidget>
+
+
+
+            <FrameLayout
+                android:background="#eeeeff"
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </TabHost>
+
+
+
+</LinearLayout>

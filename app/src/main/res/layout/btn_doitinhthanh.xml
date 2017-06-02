@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="#ff0000"
+        android:layout_width="match_parent"
+        android:layout_height="120px" >
+
+
+        <Button
+            android:id="@+id/btn_doitinhthanh_back"
+            android:background="#cf0303"
+            android:layout_weight="0.5"
+            android:layout_width="0px"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_weight="1.5"
+            android:layout_width="0px"
+            android:background="#cf0303"
+            android:text="Chọn tỉnh/Thành phố"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_doitinhthanh_xong"
+            android:layout_weight="1"
+            android:layout_width="0px"
+            android:background="#cf0303"
+            android:text="Xong"
+            android:textColor="#ffffff"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:hint="Tìm nhanh"
+        android:inputType="text" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="110px">
+    <TextView
+        android:layout_weight="8.5"
+        android:id="@+id/tv113"
+        android:gravity="center_vertical"
+        android:text="Tự động xác định vị trí"
+        android:layout_width="0px"
+        android:layout_height="match_parent" />
+        <Button
+            android:background="@drawable/ic_searchvitri"
+            android:layout_weight="1.5"
+            android:layout_width="0px"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+   <LinearLayout
+       android:orientation="horizontal"
+       android:weightSum="2"
+       android:background="#eeeeff"
+       android:layout_width="match_parent"
+       android:layout_height="120px">
+
+       <Button
+           android:layout_width="0px"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:background="#eeeeff"
+           android:gravity="left|center_vertical"
+           android:text="vietnam"
+           android:textAllCaps="false" />
+
+       <Button
+           android:layout_width="0px"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:background="#eeeeff"
+           android:gravity="right|center_vertical"
+           android:text="Đổi quốc gia"
+           android:textAllCaps="false" />
+
+   </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvtinhthanh"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"></ListView>
+
+</LinearLayout>
